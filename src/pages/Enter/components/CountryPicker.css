@@ -1,0 +1,8 @@
+.countrypicker-item:hover {
+    background-color: var(--color-primary-inverted);
+    color: var(--color-primary);
+}
+#cw-countrypicker:focus {
+    border: solid 1px var(--color-secondary-inverted);
+    box-shadow: none;
+}

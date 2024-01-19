@@ -1,0 +1,11 @@
+.prizeclaim-option {
+    cursor: pointer;
+}
+
+.prizeclaim-option.selected {
+    border: 1px solid black!important;
+}
+
+.prizeclaim-option-info {
+    font-size: 14px;
+}

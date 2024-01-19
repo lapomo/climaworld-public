@@ -1,0 +1,11 @@
+.apicall-error > button {
+    background-color: inherit;
+  }
+  .apicall-error > button:not(.collapsed) {
+    background-color: inherit;
+    color: black;
+  }
+  .apicall-error > button:focus {
+    box-shadow: none;
+  }
+  

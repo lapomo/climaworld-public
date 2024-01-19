@@ -1,0 +1,49 @@
+.cw-fund-paybtn {
+  /* animation: bounce 0.3s infinite alternate; */
+  animation: skew 1s infinite alternate;
+}
+.cw-fund-payemoji{
+      animation: bounce 0.6s infinite alternate;
+
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes skew {
+  0% {
+    transform: (10px);
+  }
+  100% {
+    transform: skew(-10px);
+  }
+}
+
+
+
+@keyframes moveAround {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateX(20px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateX(-20px);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

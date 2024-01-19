@@ -1,0 +1,100 @@
+/* .ctainputcomponent{
+    animation: fade-in 0.5s;
+} */
+
+.ctainputcomponent-group {
+  box-shadow: 0px 0px 13px 0px grey;
+  /* opacity: 0;
+  transform: translateY(10px); */
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.ctainputcomponent.fade {
+  /* display: none; */
+  opacity: 0;
+  z-index: 0;
+  /* animation: fade-out 1s ease-in-out; */
+}
+
+
+@media (min-width: 768px) {
+  .ctainputcomponent.pw.show {
+    z-index: 1;
+    animation: fade-inX 1s ease-in-out;
+  }
+  .ctainputcomponent.pw.show .ctainputcomponent-button,
+  .cw-signup-tandc {
+    animation: fade-inX 1.5s ease-in-out;
+  }
+}
+@media (max-width: 768px) {
+  .ctainputcomponent.pw.show {
+    z-index: 1;
+    animation: fade-inY 1s ease-in-out;
+  }
+  .ctainputcomponent.pw.show .ctainputcomponent-button,
+  .cw-signup-tandc {
+    animation: fade-inY 1.5s ease-in-out;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    transform: translateY(0);
+    /* display: block; */
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    /* display: none; */
+    opacity: 0;
+  }
+}
+
+@keyframes fade-inY {
+  from {
+    transform: translateY(+100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-inX {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ctainputcomponent-group.dark:hover {
+  /* border: 2px solid var(--color-primary) !important; */
+  box-shadow: 0px 0px 13px 0px var(--color-secondary-inverted) !important;
+}
+.ctainputcomponent-group.dark:focus-within {
+  box-shadow: 0px 0px 13px 0px var(--color-secondary-inverted) !important;
+}
+.ctainputcomponent-group:hover {
+  /* border: 2px solid var(--color-primary) !important; */
+  box-shadow: 0px 0px 13px 0px var(--color-secondary) !important;
+}
+.ctainputcomponent-group:focus-within {
+  box-shadow: 0px 0px 13px 0px var(--color-secondary) !important;
+}
+.ctainputcomponent-group.dark > input:focus,
+.ctainputcomponent-group.dark > input {
+  color: var(--c-txt1);
+}
+
+.ctainputcomponent-button {
+  border: 1px solid;
+  color: var(--color-primary-inverted);
+  background-color: var(--color-primary);
+  box-shadow: "grey 0px 0px 13px 0px !important";
+}

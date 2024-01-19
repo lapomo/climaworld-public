@@ -1,0 +1,12 @@
+.cw-climate-box {
+    /* flex: 1;
+    max-width: 140px; */
+    /* border-color: var(--color-primary)!important; */
+}
+.cw-clickable {
+    cursor: pointer;
+    /* border-color: grey; */
+}
+/* .cw-clickable:hover {
+    box-shadow: var(--shad-card);
+} */

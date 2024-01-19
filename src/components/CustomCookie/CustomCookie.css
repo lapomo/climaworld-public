@@ -1,0 +1,19 @@
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: none;
+}
+
+.custom-cookies a {
+    color: inherit;
+}
+.custom-cookies .btn-primary {
+    background-color: var(--color-secondary);
+    border-color: inherit;
+}
+.custom-cookies .btn-primary:hover {
+    background-color: #0009;
+    border-color: inherit;
+}
+
+.clickable {
+    cursor: pointer;
+}

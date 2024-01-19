@@ -1,0 +1,103 @@
+@import "./Fonts.css";
+
+:root{
+  --color-primary: #2381a1;
+  --color-primary-inverted: white;
+  --color-secondary: black;
+  --color-secondary-inverted: white;
+  --color-text: black;
+  --color-text-secondary: grey;
+  --color-error: red;
+  --color-success: green;
+  --color-failure: crimson;
+  --color-background-primary: white;
+  --color-background-secondary: #04070a;
+
+  --c-bg1: #b8defa;
+  /* --c-bg1: #c9f2e0; */
+  --c-bg2: white;
+
+  /* --c-p1: #125D53; */
+  --c-p1: #2381a1;
+  /* --c-p2: #FDFDFD; */
+  --c-p2: #F4F4F4;
+
+  --c-cw1: #58AC34;
+  --c-cw2: #2381A1;
+  --c-cw3: #5CCAE0;
+
+  --c-s2: #F7B465;
+  --c-s3: #FFD4A1;
+
+  --c-gs1: #142616;
+  --c-gs2: #484848;
+  --c-gs3: #9A9A9A;
+  --c-gs4: #C4C4C4;
+  --c-gs5: #F5F5F5;
+
+  --c-txt1: var(--c-gs1);
+  --shad-card: -2px -4px 12px var(--c-shad-light);
+  --shad-card-h: -2px -4px 12px var(--c-shad-dark);
+  
+  --c-shad-light: rgba(0, 0, 0, 0.2);
+  --c-shad-dark: rgba(0, 0, 0, 0.4);
+
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cwshadow-card {
+  box-shadow: var(--shad-card);
+  /* box-shadow: 0 0 13px 0 var(--shadow1)!important; */
+  /* box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.cw-clickable:hover {
+  box-shadow: var(--shad-card)!important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.modal-dialog.modal-dialog-centered:not(.modal-fullscreen) {
+  /* max-width: 800px!important; */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none!important;
+}
+
+.form-check-input:checked{
+  background-color: var(--c-p1)!important;
+  border-color: var(--c-p1)!important;
+}
+.form-check-input:focus{
+  box-shadow: none!important;
+}
+
+.form-range::-webkit-slider-thumb{
+  background-color: var(--c-gs1)!important;
+}
+.form-range::-moz-range-thumb{
+  background-color: var(--c-gs1)!important;
+}
+.form-range::-ms-thumb {
+  background-color: var(--c-gs1)!important;
+}
+
+.carousel-indicators {
+  margin-bottom: 0 !important;
+}
+/* TODO: put all this out of this global css file */
+@media (max-width: 991px){
+  .navbar-expand-lg .navbar-collapse {
+    margin: 24px 0;
+  }
+  .navbar-expand-lg .navbar-collapse > button {
+    margin-top: 1.4rem;
+  }
+}
